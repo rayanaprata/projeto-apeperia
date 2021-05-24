@@ -1,3 +1,54 @@
+/* declarando variaveis CSS para armazenar propriedades de design */
+/* incluir traço traço antes da declaração (--) */
+
+/* -- nome-da-variavel: valor;
+incluir dentro do seletor de tag :root (ele é mais forte)*/
+
+/* Esse “root” é nada mais, nada menos, do que aquela tag “html”. É como se fosse o setor de “html”, só que o peso. A especificidade dele é maior do que o seletor, só tem “html”. 
+
+É importante termos essa especificidade maior porque não corremos o risco de subscrever nossas cores sem querer, então isso aqui vai garantir que se eu colocar uma cor genérica para o “body”, por exemplo, ele não vai subscrever o “root” que nós colocamos aqui. */
+
+/* Vatagem: controle de todas as cores de uma vez só, manutenção de código mais fácil */
+
+/* Declaramos dentro de algum seletor (que costuma ser o :root {}) escrevendo --nome-da-variavel: valor, e chamamos as variáveis seguindo uma sintaxe, usamos uma função var(--nome-da-variavel) e passando o nome da variável dentro dessa função. */
+
+:root {
+  --branco: #fff;
+  --azul-claro: #dfe3e5;
+  --vermelho-forte: #b72e2e;
+  --cinza-escuro: #4f4c4c;
+  --cinza-claro: #f7f4f4;
+  --cinza-medio: #d9d9d9;
+
+  --fonte-link: #0084ff;
+  --fonte-cinza: #666;
+  --borda-cabecalho-mobile: #103d4a;
+  --bg-rodape: #333;
+  --bg-chamada-mobile: #00161c;
+
+  --planos-cartao-start: #56ccf2;
+  --planos-cartao-ultra: #b04cd9;
+  --planos-cartao-mega: #e33b3b;
+
+  --montserrat: "Montserrat", sans-serif;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem; /* top/bottom left/right */
+  border: 1px solid var(--branco);
+  border-radius: 5px;
 }
