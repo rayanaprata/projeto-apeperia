@@ -1,0 +1,44 @@
+.cabecalho {
+  color: #fff;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  border-bottom: 1px solid #103d4a;
+
+  position: absolute;
+}
+
+.cabecalho__logo {
+  margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao {
+  text-align: center;
+}
+
+.cabecalho__link {
+  font-size: 1.1rem;
+
+  display: inline-block;
+
+  margin-right: 0.7rem;
+  margin-bottom: 1.25rem;
+  margin-left: 0.7rem;
+}
+
+/* Mas o que quer dizer “remiem”? “em” significa “efêmero”, ou seja, que muda ou que transita, variável. E “rem” quer dizer “root efêmero”, quer dizer exatamente que ele também é variável, só que ele é variável baseado na raiz. Lembra? A raiz é a tag “html”. No nosso caso aqui, então ele é variável conforme o valor raiz do font-size. */
+
+/* Quando montamos páginas que se adaptam a diversos dispositivos, é importante usar unidades de medidas que se adaptam automaticamente para diversos tamanhos e espaços, mas às vezes é interessante usar unidades que sejam relativas à outras situações além dessas, como é o caso de REM e EM. 
+
+REM é uma unidade relativa à propriedade font-size da tag <html>, portanto se a tag <html> tem 16px de font-size 1 REM é equivalente à 16px. EM é relativa à propriedade font-size da tag mãe, portanto se a tag mãe tiver um font-size de 16px 1 EM é equivalente à 16px.
+
+REM vem de “Root ephemeral” que em uma tradução técnica fica “variável à raiz”, ou seja, é variável em relação à propriedade font-size da tag raiz (HTML). EM vem de “ephemeral” que significa “variável”, e ela é variável à propriedade font-size da tag mãe.*/
